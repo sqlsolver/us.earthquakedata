@@ -49,8 +49,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var routes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */] },
-    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */], outlet: 'main' },
+    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */], outlet: 'main' },
     { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_2__contact_contact_component__["a" /* ContactComponent */], outlet: 'sidebar' },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_4__login_login_component__["a" /* LoginComponent */], outlet: 'sidebar' },
     { path: 'losangeles', component: __WEBPACK_IMPORTED_MODULE_5__losangeles_losangeles_component__["a" /* LosangelesComponent */], outlet: 'main' },
@@ -59,7 +59,7 @@ var routes = [
     { path: 'seattle', component: __WEBPACK_IMPORTED_MODULE_8__seattle_seattle_component__["a" /* SeattleComponent */], outlet: 'main' },
     { path: 'supplies', component: __WEBPACK_IMPORTED_MODULE_9__supplies_supplies_component__["a" /* SuppliesComponent */], outlet: 'main' },
     { path: 'us', component: __WEBPACK_IMPORTED_MODULE_10__us_us_component__["a" /* UsComponent */], outlet: 'main' },
-    { path: '**', component: __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */] }
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */], outlet: 'main' }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -98,7 +98,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper container-fluid\">\n  <nav class=\"navbar navbar-inverse navbar-toggleable-md bg-success\">      \n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" ng-click=\"navbar-collapse = !navbar-collapse\" data-toggle=\"collapse\" target=\".navbarToggler\" aria-controls=\"navbarToggler\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand\" href=\"#\">Menu&nbsp;|&nbsp;</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['losangeles'] } }]\">Los Angeles</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['seattle'] } }]\">Seattle</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['sanfrancisco'] } }]\">San Francisco</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['us'] } }]\">US</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['safety'] } }]\">Safety</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['supplies'] } }]\">Supplies</a>\n      </li>\n      <li class=\"nav-item\">    \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['contact'] } }]\">Contact</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['login'] } }]\">Login</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"container-fluid bg-info text-center\">The Earthquake Data site provides non-emergency information only, summarizing key data for earthquakes in the United States.</div>\n<div class=\"container-fluid bg-success text-right\"><a href=\"http://ramonamaxwell.com\" target=\"_blank\">Ramona Maxwell</a> &copy;2017</div>\n<div class=\"row\">\n<div class=\"col-md-7\"><router-outlet name=\"main\"></router-outlet></div>\n<div class=\"col-md-17\"><router-outlet name=\"sidebar\"></router-outlet></div>\n<div class=\"container-fluid text-center\"><router-outlet></router-outlet></div>\n<footer>All earthquake data is sourced from<a href=\"https://earthquake.usgs.gov/earthquakes\" target=\"_blank\">&nbsp;USGS&nbsp;</a>data feeds. Dashboards and graphics may use calculated data which is not guaranteed to be accurate. In case of an earthquake in your area please do not use this site for information. Please contact your local emergency management agency for assistance.</footer>\n"
+module.exports = "<div class=\"wrapper ciontainer-fluid\">\n<nav class=\"navbar navbar-inverse navbar-toggleable-md bg-success\">      \n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" ng-click=\"navbar-collapse = !navbar-collapse\" data-toggle=\"collapse\" target=\".navbarToggler\" aria-controls=\"navbarToggler\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand\" href=\"#\">Menu&nbsp;|&nbsp;</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['losangeles'] } }]\">Los Angeles</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['seattle'] } }]\">Seattle</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['sanfrancisco'] } }]\">San Francisco</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['us'] } }]\">US</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['safety'] } }]\">Safety</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['supplies'] } }]\">Supplies</a>\n      </li>\n      <li class=\"nav-item\">    \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['contact'] } }]\">Contact</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['login'] } }]\">Login</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"container-fluid bg-info text-center\">The Earthquake Data site provides non-emergency information only, summarizing key data for earthquakes in the United States.</div>\n  <div class=\"container-fluid bg-success text-right\"><a href=\"http://ramonamaxwell.com\" target=\"_blank\">Ramona Maxwell</a> &copy;2017</div>\n  <br/>\n  <div class=\"container-fluid text-center\">\n    <router-outlet></router-outlet>\n    <div class=\"row\"><router-outlet name=\"main\"></router-outlet><div>\n    <div class=\"col-md-17\"><router-outlet name=\"sidebar\"></router-outlet></div>\n  </div>\n</div>\n<footer>All earthquake data is sourced from<a href=\"https://earthquake.usgs.gov/earthquakes\" target=\"_blank\">&nbsp;USGS&nbsp;</a>data feeds. Dashboards and graphics may use calculated data which is not guaranteed to be accurate. In case of an earthquake in your area please do not use this site for information. Please contact your local emergency management agency for assistance.</footer>\n"
 
 /***/ }),
 
@@ -415,7 +415,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/losangeles/losangeles.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  losangeles works!\n</p>\n"
+module.exports = "<div class=\"col-md-7\">\n<p>\n  losangeles works!\n</p>\n</div>\n"
 
 /***/ }),
 
@@ -476,7 +476,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/safety/safety.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  safety works!\n</p>\n"
+module.exports = "<div class=\"col-md-7\">\n<p>\n  safety works!\n</p>\n</div>\n"
 
 /***/ }),
 
@@ -537,7 +537,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/sanfrancisco/sanfrancisco.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<iframe width=\"800\" height=\"600\" src=\"https://app.powerbi.com/view?r=eyJrIjoiYjk1ZjNkMjQtMmY1ZS00ZGMyLThjZTItZTM2NWU0MTcyNmQzIiwidCI6IjA5MzhlMzJmLTNhYzgtNDJkYi04YWZjLTAzNzA3MGRmNTE0NSIsImMiOjN9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>\n"
+module.exports = "<div class=\"col-md-7\">\n<iframe width=\"800\" height=\"600\" src=\"https://app.powerbi.com/view?r=eyJrIjoiYjk1ZjNkMjQtMmY1ZS00ZGMyLThjZTItZTM2NWU0MTcyNmQzIiwidCI6IjA5MzhlMzJmLTNhYzgtNDJkYi04YWZjLTAzNzA3MGRmNTE0NSIsImMiOjN9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>\n</div>\n\n"
 
 /***/ }),
 
@@ -598,7 +598,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/seattle/seattle.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<iframe width=\"800\" height=\"600\" src=\"https://app.powerbi.com/view?r=eyJrIjoiYjk1ZjNkMjQtMmY1ZS00ZGMyLThjZTItZTM2NWU0MTcyNmQzIiwidCI6IjA5MzhlMzJmLTNhYzgtNDJkYi04YWZjLTAzNzA3MGRmNTE0NSIsImMiOjN9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>\n"
+module.exports = "<div class=\"col-md-7\">\n<iframe width=\"800\" height=\"600\" src=\"https://app.powerbi.com/view?r=eyJrIjoiYjk1ZjNkMjQtMmY1ZS00ZGMyLThjZTItZTM2NWU0MTcyNmQzIiwidCI6IjA5MzhlMzJmLTNhYzgtNDJkYi04YWZjLTAzNzA3MGRmNTE0NSIsImMiOjN9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>\n</div>\n"
 
 /***/ }),
 
@@ -659,7 +659,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/supplies/supplies.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  supplies works!\n</p>\n"
+module.exports = "<div class=\"col-md-7\">\n<p>\n  supplies works!\n</p>\n</div>\n"
 
 /***/ }),
 

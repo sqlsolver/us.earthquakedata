@@ -15,8 +15,8 @@ import { SuppliesComponent } from './supplies/supplies.component';
 import { UsComponent } from './us/us.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent, outlet: 'main' },
+  { path: 'home', component: HomeComponent, outlet: 'main' },
   { path: 'contact', component: ContactComponent, outlet: 'sidebar' },
   { path: 'login', component: LoginComponent, outlet: 'sidebar' },
   { path: 'losangeles', component: LosangelesComponent, outlet: 'main' },
@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'seattle', component: SeattleComponent, outlet: 'main' },
   { path: 'supplies', component: SuppliesComponent, outlet: 'main' },
   { path: 'us', component: UsComponent, outlet: 'main' },
-  { path: '**', component: HomeComponent }
+  { path: '**', component: HomeComponent, outlet: 'main' }
 ];
 
 @NgModule({

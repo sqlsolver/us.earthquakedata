@@ -1,5 +1,5 @@
-<div class="wrapper container-fluid">
-  <nav class="navbar navbar-inverse navbar-toggleable-md bg-success">      
+<div class="wrapper ciontainer-fluid">
+<nav class="navbar navbar-inverse navbar-toggleable-md bg-success">      
   <button class="navbar-toggler navbar-toggler-right" type="button" ng-click="navbar-collapse = !navbar-collapse" data-toggle="collapse" target=".navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
   </button>
@@ -34,9 +34,12 @@
   </div>
 </nav>
 <div class="container-fluid bg-info text-center">The Earthquake Data site provides non-emergency information only, summarizing key data for earthquakes in the United States.</div>
-<div class="container-fluid bg-success text-right"><a href="http://ramonamaxwell.com" target="_blank">Ramona Maxwell</a> &copy;2017</div>
-<div class="row">
-<div class="col-md-7"><router-outlet name="main"></router-outlet></div>
-<div class="col-md-17"><router-outlet name="sidebar"></router-outlet></div>
-<div class="container-fluid text-center"><router-outlet></router-outlet></div>
+  <div class="container-fluid bg-success text-right"><a href="http://ramonamaxwell.com" target="_blank">Ramona Maxwell</a> &copy;2017</div>
+  <br/>
+  <div class="container-fluid text-center">
+    <router-outlet></router-outlet>
+    <div class="row"><router-outlet name="main"></router-outlet><div>
+    <div class="col-md-17"><router-outlet name="sidebar"></router-outlet></div>
+  </div>
+</div>
 <footer>All earthquake data is sourced from<a href="https://earthquake.usgs.gov/earthquakes" target="_blank">&nbsp;USGS&nbsp;</a>data feeds. Dashboards and graphics may use calculated data which is not guaranteed to be accurate. In case of an earthquake in your area please do not use this site for information. Please contact your local emergency management agency for assistance.</footer>
