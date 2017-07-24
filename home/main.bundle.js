@@ -77,28 +77,10 @@ AppRoutingModule = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/app.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper ciontainer-fluid\">\n<nav class=\"navbar navbar-inverse navbar-toggleable-md bg-success\">      \n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" ng-click=\"navbar-collapse = !navbar-collapse\" data-toggle=\"collapse\" target=\".navbarToggler\" aria-controls=\"navbarToggler\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand\" href=\"#\">Menu&nbsp;|&nbsp;</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['losangeles'] } }]\">Los Angeles</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['seattle'] } }]\">Seattle</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['sanfrancisco'] } }]\">San Francisco</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['us'] } }]\">US</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['safety'] } }]\">Safety</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['supplies'] } }]\">Supplies</a>\n      </li>\n      <li class=\"nav-item\">    \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['contact'] } }]\">Contact</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['login'] } }]\">Login</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"container-fluid bg-info text-center\">The Earthquake Data site provides non-emergency information only, summarizing key data for earthquakes in the United States.</div>\n  <div class=\"container-fluid bg-success text-right\"><a href=\"http://ramonamaxwell.com\" target=\"_blank\">Ramona Maxwell</a> &copy;2017</div>\n  <br/>\n  <div class=\"container-fluid text-center\">\n    <router-outlet></router-outlet>\n    <div class=\"row\">\n      <div class=col-md-8><router-outlet name=\"main\"></router-outlet><div>\n      <div class=\"col-md-4 toggled\"><router-outlet name=\"sidebar\"></router-outlet></div>\n  </div>\n</div>\n<footer class=\"text-left\">All earthquake data is sourced from<a href=\"https://earthquake.usgs.gov/earthquakes\" target=\"_blank\">&nbsp;USGS&nbsp;</a>data feeds. Dashboards and graphics may use calculated data which is not guaranteed to be accurate. In case of an earthquake in your area please do not use this site for information. Please contact your local emergency management agency for assistance.</footer>\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\n<nav class=\"navbar navbar-inverse navbar-toggleable-md bg-success\">      \n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggler\" aria-controls=\"navbarToggler\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand\" href=\"#\">Menu&nbsp;|&nbsp;</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['losangeles'] } }]\">Los Angeles</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['seattle'] } }]\">Seattle</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['sanfrancisco'] } }]\">San Francisco</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['us'] } }]\">US</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['safety'] } }]\">Safety</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['supplies'] } }]\">Supplies</a>\n      </li>\n      <li class=\"nav-item\">    \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['contact'] } }]\">Contact</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['login'] } }]\">Login</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"bg-info text-center\">The Earthquake Data site provides non-emergency information only, summarizing key data for earthquakes in the United States.</div>\n  <div class=\"bg-success text-right\"><a href=\"http://ramonamaxwell.com\" target=\"_blank\">Ramona Maxwell</a> &copy;2017</div>\n</div>  \n<br/>\n<div class=\"clearfix\"></div>\n<div class=\"container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-sm-8\"><router-outlet name=\"main\"></router-outlet><div>\n      <div class=\"col-sm-4\"><router-outlet name=\"sidebar\"></router-outlet></div>\n    </div>\n</div>\n<footer class=\"container text-left\">All earthquake data is sourced from<a href=\"https://earthquake.usgs.gov/earthquakes\" target=\"_blank\">&nbsp;USGS&nbsp;</a>data feeds. Dashboards and graphics may use calculated data which is not guaranteed to be accurate. In case of an earthquake in your area please do not use this site for information. Please contact your local emergency management agency for assistance.</footer>\n\n"
 
 /***/ }),
 
@@ -124,8 +106,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__("../../../../../src/app/app.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/app.component.css")]
+        template: __webpack_require__("../../../../../src/app/app.component.html")
     })
 ], AppComponent);
 
@@ -152,6 +133,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__supplies_supplies_component__ = __webpack_require__("../../../../../src/app/supplies/supplies.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -168,6 +150,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 //Modules
 
 //Components
+
 
 
 
@@ -195,7 +178,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_11__safety_safety_component__["a" /* SafetyComponent */],
             __WEBPACK_IMPORTED_MODULE_12__supplies_supplies_component__["a" /* SuppliesComponent */],
             __WEBPACK_IMPORTED_MODULE_13__login_login_component__["a" /* LoginComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__contact_contact_component__["a" /* ContactComponent */]
+            __WEBPACK_IMPORTED_MODULE_14__contact_contact_component__["a" /* ContactComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__navbar_navbar_component__["a" /* NavbarComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -211,28 +195,10 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/contact/contact.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "../../../../../src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  contact works!\n</p>\n"
+module.exports = "<button class=\"btn btn-primary\"><a href=\"mailto:sqlsolver@gmail.com?Subject=Earthquake\" target=\"_top\">eMail</a></button>\n"
 
 /***/ }),
 
@@ -262,8 +228,7 @@ var ContactComponent = (function () {
 ContactComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-contact',
-        template: __webpack_require__("../../../../../src/app/contact/contact.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/contact/contact.component.css")]
+        template: __webpack_require__("../../../../../src/app/contact/contact.component.html")
     }),
     __metadata("design:paramtypes", [])
 ], ContactComponent);
@@ -394,24 +359,6 @@ LoginComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/losangeles/losangeles.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "../../../../../src/app/losangeles/losangeles.component.html":
 /***/ (function(module, exports) {
 
@@ -445,8 +392,7 @@ var LosangelesComponent = (function () {
 LosangelesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-losangeles',
-        template: __webpack_require__("../../../../../src/app/losangeles/losangeles.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/losangeles/losangeles.component.css")]
+        template: __webpack_require__("../../../../../src/app/losangeles/losangeles.component.html")
     }),
     __metadata("design:paramtypes", [])
 ], LosangelesComponent);
@@ -455,21 +401,44 @@ LosangelesComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/safety/safety.component.css":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "../../../../../src/app/navbar/navbar.component.html":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse bg-success\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n                <button type=\"button\" \n                        class=\"navbar-toggle collapsed\"\n                       (click)=\"toggleState()\"\n\t\t\tdata-toggle=\"collapse\"\t>\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n\t    <a class=\"navbar-brand\" href=\"#\">Menu&nbsp;|&nbsp;</a>            \n        </div>\n         <div class=\"collapse navbar-collapse\"\n              [ngClass]=\"{ 'in': isIn }\">\n            <ul class=\"nav navbar-nav\">\n                <li class=\"nav-item active\">\n\t        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['losangeles'] } }]\">Los Angeles</a>\n     \t        </li>\n\t      <li class=\"nav-item\">\n\t        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['seattle'] } }]\">Seattle</a>\n\t      </li>\n\t      <li class=\"nav-item\">      \n\t\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['sanfrancisco'] } }]\">San Francisco</a>\n\t      </li>\n\t      <li class=\"nav-item\">\n\t      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['us'] } }]\">US</a>\n\t      </li>\n\t      <li class=\"nav-item\">\n\t      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['safety'] } }]\">Safety</a>\n\t      </li>\n\t      <li class=\"nav-item\">\n\t      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['supplies'] } }]\">Supplies</a>\n\t      </li>\n\t      <li class=\"nav-item\">    \n\t\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['contact'] } }]\">Contact</a>\n\t      </li>\n\t      <li class=\"nav-item\">      \n\t\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['login'] } }]\">Login</a>\n\t      </li>\n            </ul>\n        </div>\n    </div>\n</nav>\n"
 
+/***/ }),
 
-// module
-exports.push([module.i, "", ""]);
+/***/ "../../../../../src/app/navbar/navbar.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// exports
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavbarComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 
+var NavbarComponent = (function () {
+    function NavbarComponent() {
+        this.isIn = false; // store state
+    }
+    NavbarComponent.prototype.toggleState = function () {
+        var bool = this.isIn;
+        this.isIn = bool === false ? true : false;
+    };
+    return NavbarComponent;
+}());
+NavbarComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
+        selector: 'app-navbar',
+        template: __webpack_require__("../../../../../src/app/navbar/navbar.component.html"),
+    })
+], NavbarComponent);
 
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+//# sourceMappingURL=navbar.component.js.map
 
 /***/ }),
 
@@ -506,31 +475,12 @@ var SafetyComponent = (function () {
 SafetyComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-safety',
-        template: __webpack_require__("../../../../../src/app/safety/safety.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/safety/safety.component.css")]
+        template: __webpack_require__("../../../../../src/app/safety/safety.component.html")
     }),
     __metadata("design:paramtypes", [])
 ], SafetyComponent);
 
 //# sourceMappingURL=safety.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/sanfrancisco/sanfrancisco.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -567,31 +517,12 @@ var SanfranciscoComponent = (function () {
 SanfranciscoComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-sanfrancisco',
-        template: __webpack_require__("../../../../../src/app/sanfrancisco/sanfrancisco.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/sanfrancisco/sanfrancisco.component.css")]
+        template: __webpack_require__("../../../../../src/app/sanfrancisco/sanfrancisco.component.html")
     }),
     __metadata("design:paramtypes", [])
 ], SanfranciscoComponent);
 
 //# sourceMappingURL=sanfrancisco.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/seattle/seattle.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -628,8 +559,7 @@ var SeattleComponent = (function () {
 SeattleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-seattle',
-        template: __webpack_require__("../../../../../src/app/seattle/seattle.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/seattle/seattle.component.css")]
+        template: __webpack_require__("../../../../../src/app/seattle/seattle.component.html")
     }),
     __metadata("design:paramtypes", [])
 ], SeattleComponent);
@@ -638,28 +568,10 @@ SeattleComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/supplies/supplies.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "../../../../../src/app/supplies/supplies.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<p>\n  supplies works!\n</p>\n\n"
+module.exports = "<p>\n  supplies works!\n</p>\n\n"
 
 /***/ }),
 
@@ -689,31 +601,12 @@ var SuppliesComponent = (function () {
 SuppliesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-supplies',
-        template: __webpack_require__("../../../../../src/app/supplies/supplies.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/supplies/supplies.component.css")]
+        template: __webpack_require__("../../../../../src/app/supplies/supplies.component.html")
     }),
     __metadata("design:paramtypes", [])
 ], SuppliesComponent);
 
 //# sourceMappingURL=supplies.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/us/us.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -750,8 +643,7 @@ var UsComponent = (function () {
 UsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-us',
-        template: __webpack_require__("../../../../../src/app/us/us.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/us/us.component.css")]
+        template: __webpack_require__("../../../../../src/app/us/us.component.html")
     }),
     __metadata("design:paramtypes", [])
 ], UsComponent);
@@ -798,7 +690,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("../../../../../src/main.ts");
@@ -806,5 +698,5 @@ module.exports = __webpack_require__("../../../../../src/main.ts");
 
 /***/ })
 
-},[0]);
+},[1]);
 //# sourceMappingURL=main.bundle.js.map
