@@ -80,7 +80,7 @@ AppRoutingModule = __decorate([
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n<nav class=\"navbar navbar-inverse navbar-toggleable-md bg-success\">      \n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggler\" aria-controls=\"navbarToggler\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand\" href=\"#\">Menu&nbsp;|&nbsp;</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['losangeles'] } }]\">Los Angeles</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['seattle'] } }]\">Seattle</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['sanfrancisco'] } }]\">San Francisco</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['us'] } }]\">US</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['safety'] } }]\">Safety</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['supplies'] } }]\">Supplies</a>\n      </li>\n      <li class=\"nav-item\">    \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['contact'] } }]\">Contact</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['login'] } }]\">Login</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<div class=\"bg-info text-center\">The Earthquake Data site provides non-emergency information only, summarizing key data for earthquakes in the United States.</div>\n  <div class=\"bg-success text-right\"><a href=\"http://ramonamaxwell.com\" target=\"_blank\">Ramona Maxwell</a> &copy;2017</div>\n</div>  \n<br/>\n<div class=\"clearfix\"></div>\n<div class=\"container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-sm-8\"><router-outlet name=\"main\"></router-outlet><div>\n      <div class=\"col-sm-4\"><router-outlet name=\"sidebar\"></router-outlet></div>\n    </div>\n</div>\n<footer class=\"container text-left\">All earthquake data is sourced from<a href=\"https://earthquake.usgs.gov/earthquakes\" target=\"_blank\">&nbsp;USGS&nbsp;</a>data feeds. Dashboards and graphics may use calculated data which is not guaranteed to be accurate. In case of an earthquake in your area please do not use this site for information. Please contact your local emergency management agency for assistance.</footer>\n\n"
+module.exports = "<div class=\"container-fluid\">\n<app-navbar></app-navbar>\n<div class=\"bg-info text-center\">The Earthquake Data site provides non-emergency information only, summarizing key data for earthquakes in the United States.</div>\n  <div class=\"bg-success text-right\"><a href=\"http://ramonamaxwell.com\" target=\"_blank\">Ramona Maxwell</a> &copy;2017</div>\n</div>  \n<br/>\n<div class=\"clearfix\"></div>\n<div class=\"container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-sm-8\"><router-outlet name=\"main\"></router-outlet><div>\n      <div class=\"col-sm-4\"><router-outlet name=\"sidebar\"></router-outlet></div>\n    </div>\n</div>\n<footer class=\"container text-left\">All earthquake data is sourced from<a href=\"https://earthquake.usgs.gov/earthquakes\" target=\"_blank\">&nbsp;USGS&nbsp;</a>data feeds. Dashboards and graphics may use calculated data which is not guaranteed to be accurate. In case of an earthquake in your area please do not use this site for information. Please contact your local emergency management agency for assistance.</footer>\n\n"
 
 /***/ }),
 
@@ -404,7 +404,7 @@ LosangelesComponent = __decorate([
 /***/ "../../../../../src/app/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse bg-success\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n                <button type=\"button\" \n                        class=\"navbar-toggle collapsed\"\n                       (click)=\"toggleState()\"\n\t\t\tdata-toggle=\"collapse\"\t>\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n\t    <a class=\"navbar-brand\" href=\"#\">Menu&nbsp;|&nbsp;</a>            \n        </div>\n         <div class=\"collapse navbar-collapse\"\n              [ngClass]=\"{ 'in': isIn }\">\n            <ul class=\"nav navbar-nav\">\n                <li class=\"nav-item active\">\n\t        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['losangeles'] } }]\">Los Angeles</a>\n     \t        </li>\n\t      <li class=\"nav-item\">\n\t        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['seattle'] } }]\">Seattle</a>\n\t      </li>\n\t      <li class=\"nav-item\">      \n\t\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['sanfrancisco'] } }]\">San Francisco</a>\n\t      </li>\n\t      <li class=\"nav-item\">\n\t      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['us'] } }]\">US</a>\n\t      </li>\n\t      <li class=\"nav-item\">\n\t      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['safety'] } }]\">Safety</a>\n\t      </li>\n\t      <li class=\"nav-item\">\n\t      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['supplies'] } }]\">Supplies</a>\n\t      </li>\n\t      <li class=\"nav-item\">    \n\t\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['contact'] } }]\">Contact</a>\n\t      </li>\n\t      <li class=\"nav-item\">      \n\t\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['login'] } }]\">Login</a>\n\t      </li>\n            </ul>\n        </div>\n    </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-inverse navbar-toggleable-md bg-success\">      \n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggler\" aria-controls=\"navbarToggler\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand\" href=\"#\">Menu&nbsp;|&nbsp;</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['losangeles'] } }]\">Los Angeles</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['seattle'] } }]\">Seattle</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['sanfrancisco'] } }]\">San Francisco</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['us'] } }]\">US</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['safety'] } }]\">Safety</a>\n      </li>\n      <li class=\"nav-item\">\n      <a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'main': ['supplies'] } }]\">Supplies</a>\n      </li>\n      <li class=\"nav-item\">    \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['contact'] } }]\">Contact</a>\n      </li>\n      <li class=\"nav-item\">      \n\t<a class=\"nav-link\" [routerLink]=\"[{ outlets: { 'sidebar': ['login'] } }]\">Login</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -420,14 +420,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var NavbarComponent = (function () {
     function NavbarComponent() {
-        this.isIn = false; // store state
     }
-    NavbarComponent.prototype.toggleState = function () {
-        var bool = this.isIn;
-        this.isIn = bool === false ? true : false;
+    NavbarComponent.prototype.ngOnInit = function () {
     };
     return NavbarComponent;
 }());
@@ -435,7 +435,8 @@ NavbarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-navbar',
         template: __webpack_require__("../../../../../src/app/navbar/navbar.component.html"),
-    })
+    }),
+    __metadata("design:paramtypes", [])
 ], NavbarComponent);
 
 //# sourceMappingURL=navbar.component.js.map
