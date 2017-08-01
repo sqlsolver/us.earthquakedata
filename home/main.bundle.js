@@ -488,7 +488,7 @@ SafetyComponent = __decorate([
 /***/ "../../../../../src/app/sanfrancisco/sanfrancisco.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<iframe width=\"800\" height=\"600\" src=\"https://app.powerbi.com/view?r=eyJrIjoiYjk1ZjNkMjQtMmY1ZS00ZGMyLThjZTItZTM2NWU0MTcyNmQzIiwidCI6IjA5MzhlMzJmLTNhYzgtNDJkYi04YWZjLTAzNzA3MGRmNTE0NSIsImMiOjN9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>\n\n\n"
+module.exports = "<iframe width=\"933\" height=\"700\" src=\"https://app.powerbi.com/view?r=eyJrIjoiODFlNjMwYWYtZDAyNi00NDlkLTk3NDAtNDM5OGNiMzkzMTA0IiwidCI6IjA5MzhlMzJmLTNhYzgtNDJkYi04YWZjLTAzNzA3MGRmNTE0NSIsImMiOjN9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>\n"
 
 /***/ }),
 
@@ -530,7 +530,7 @@ SanfranciscoComponent = __decorate([
 /***/ "../../../../../src/app/seattle/seattle.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<iframe width=\"800\" height=\"600\" src=\"https://app.powerbi.com/view?r=eyJrIjoiYjk1ZjNkMjQtMmY1ZS00ZGMyLThjZTItZTM2NWU0MTcyNmQzIiwidCI6IjA5MzhlMzJmLTNhYzgtNDJkYi04YWZjLTAzNzA3MGRmNTE0NSIsImMiOjN9\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>\n\n"
+module.exports = "<p>Placeholder for Seattle earthquake data.</p>\n"
 
 /***/ }),
 
@@ -614,7 +614,7 @@ SuppliesComponent = __decorate([
 /***/ "../../../../../src/app/us/us.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  us works!\n</p>\n"
+module.exports = "<p>Placeholder for Continental US Earthquake data.</p>\n"
 
 /***/ }),
 
