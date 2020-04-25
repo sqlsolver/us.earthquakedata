@@ -1,6 +1,9 @@
 # Earthquakedata
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
+[USGS Restful endpoints list](https://viewer.nationalmap.gov/services/)
+[USGS Earthquake Overview Page](https://earthquake.usgs.gov/)
+[Aeris Weather Earthquakes API](https://www.aerisweather.com/support/docs/api/reference/endpoints/earthquakes/)
 
 ## Development server
 
